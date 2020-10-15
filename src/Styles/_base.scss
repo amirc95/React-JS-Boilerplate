@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+.app {
+  font-family: "Calibri", sans-serif;
+  /*
+    display: grid;
+    grid-template-columns: 
+    [app-start] minmax(4rem, 1fr) 
+    [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] 
+    minmax(4rem, 1fr) [app-end];
+    */
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-primary-2;
+}

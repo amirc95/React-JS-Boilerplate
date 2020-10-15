@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["src/*"],
+      "@Components/*": ["src/Components/*"],
+      "@Assets/*": ["src/Assets/*"],
+      "@Styles/*": ["src/Styles/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
